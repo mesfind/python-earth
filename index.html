@@ -267,15 +267,13 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 
 <p>
   <strong>Requirements:</strong>
-The training is hands-on, so participants are encouraged to bring in and use their own laptops to insure the proper setup of tools for an efficient workflow once you leave the workshop.  (We will provide instructions on setting up the required software several days in advance)
-<em> There are no pre-requisites, and we will assume no prior knowledge about the tools.</em> 
+  The training is hands-on, so participants are encouraged to bring in and use their own laptops to insure the proper setup of tools for an efficient workflow once you leave the workshop. (We will provide instructions on setting up the required software several days in advance)
+  <em>There are no pre-requisites, and we will assume no prior knowledge about the tools.</em> 
 </p>
 
+<h2>Software Setup</h2>
 
-
-<h2> Software Setup</h2>
-
-<p> To participate in a training workshop, you will need working copies of the software described below. Please 
+<p>To participate in a training workshop, you will need working copies of the software described below. Please 
 make sure to install everything and try opening it to make sure it works <em>before</em> the start of your workshop. If 
 you run into any problems, please feel free to email the instructor or arrive early to your workshop on the first day.
 
@@ -286,38 +284,26 @@ tools for an efficient workflow once you leave the workshop.
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
-  <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  <a href="https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
-<div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
-           the workshop will teach Python using something other than
-           the IPython notebook.
-           Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility -->
+
+<div id="python"> 
   <h3>Python</h3>
 
   <p>
     <a href="http://python.org">Python</a> is a popular language for
     research computing, and great for general-purpose programming as
-    well.  Installing all of its research packages individually can be
+    well. Installing all of its research packages individually can be
     a bit difficult, so we recommend
     <a href="https://www.continuum.io/anaconda">Anaconda</a>,
     an all-in-one installer.
   </p>
 
-    <p>
-      Regardless of how you choose to install it,
-      <strong>please make sure you install Python version 3.x</strong>
-      (e.g., 3.4 is fine).
-    </p>
-
-    <p>
-      We will teach Python using the IPython notebook, a programming environment
-      that runs in a web browser. For this to work you will need a reasonably
-      up-to-date browser. The current versions of the Chrome, Safari and
-      Firefox browsers are all
-      <a href="http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility">supported</a>
-      (some older browsers, including Internet Explorer version 9
-      and below, are not).
-    </p>
+  <p>
+    Regardless of how you choose to install it,
+    <strong>please make sure you install Python version 3.x</strong>
+    (e.g., 3.4 is fine).
+  </p>
 
   <div class="row">
     <div class="col-md-4">
@@ -342,116 +328,16 @@ tools for an efficient workflow once you leave the workshop.
       <h4 id="python-linux">Linux</h4>
       <ol>
         <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
-        <li>Download the Python 3 installer for Linux.<br>
-          (Installation requires using the shell. If you aren't
-           comfortable doing the installation yourself
-           stop here and request help at the workshop.)
-        </li>
-        <li>
-          Open a terminal window.
-        </li>
-        <li>
-          Type <pre>bash Anaconda3-</pre> and then press
-          tab. The name of the file you just downloaded should
-          appear. If it does not, navigate to the folder where you
-          downloaded the file, for example with:
-          <pre>cd Downloads</pre>
-          Then, try again.
-        </li>
-        <li>
-          Press enter. You will follow the text-only prompts. To move through
-          the text, press the space key. Type <code>yes</code> and
-          press enter to approve the license. Press enter to approve the
-          default location for the files. Type <code>yes</code> and
-          press enter to prepend Anaconda to your <code>PATH</code>
-          (this makes the Anaconda distribution the default Python).
-        </li>
-        <li>
-          Close the terminal window.
+        <li>Download the Python 3 installer for Linux.</li>
+        <li>Open a terminal window.</li>
+        <li>Type <pre>bash Anaconda3-</pre> and press tab to autocomplete the filename.</li>
+        <li>Press enter and follow the prompts (type <code>yes</code> when asked).</li>
+        <li>Close the terminal window.</li>
       </ol>
     </div>
   </div>
-<!--
-  <p>
-  Once you are done installing the software listed above,
-  please go to <a href="setup/index.html">this page</a>,
-  which has instructions on how to test that everything was installed correctly.
-  </p>
--->
-</div> <!-- End of 'Python' section. -->
-
-
-<!--
-
-<div id="git"> 
-
-  <h3>Quarto CLI and Quarto package</h3>
-  <p> Quarto is an open-source scientific and technical publishing system built on Pandoc, and allows users to create dynamic content with Python, R, Julia, and Observable. 
-       Additional information about Quarto is available at https://quarto.org/
-    </p>
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="git-windows">Windows</h4>
-        <ol>      
-            <li>Download Quarto from <a href="https://quarto.org/docs/download/">here</a>
-            <li> Select Windows from the listed Platfrom
-            <li>Run the .exe file that was just downloaded
-            <li> Once it's installed, open Rstudo and install quarto library with <code>install.packages("quarto")</code>
-        </ol>
-    </div>
-     
-    <div class="col-md-4">
-      <h4 id="git-macosx">Mac OS X</h4>
-        <ol>      
-            <li>Download Quarto from <a href="https://quarto.org/docs/download/">here</a>
-             <li> Select Mac OS from the listed Platfrom
-            <li>Run the .pkg file that was just downloaded
-            <li> Once it's installed, open Rstudo and install quarto library with <code>install.packages("quarto")</code>
-        </ol>
-    </div>
-    <div class="col-md-4">
-      <h4 id="git-linux">Linux</h4>
-        <ol>      
-            <li>Download Quarto from <a href="https://quarto.org/docs/download/">here</a>
-            <li> Select Ubuntu/Debain platform
-            <li>Go to the  download folder
-            <li>Under <i>Installers</i> select <b>quarto x.yy.zzzz - Ubuntu</b>
-            <li> Once, it's downloaded, double click the file to install it, (or <code>sudo dpkg -i quarto-x.yy.zzz-linux-amd64.deb</code> 
-             at the terminal)
-             <li> open Rstudo and install quarto library with <code>install.packages("quarto")</code>
-        </ol>
-    </div>     
-   </div>
- </div> 
--->
-<!-- End of 'Git' section. -->
-<!--
-  Uncomment this section if you are using our virtual machine.
-
-<div id="vm">
-  <h3>Virtual Machine</h3>
-
-  <p>
-    Some instructors prefer to have learners use a virtual machine (VM)
-    rather than install software on their own computers.  If your
-    instructors have chosen to do this, please:
-  </p>
-  <ol>
-    <li>
-      Install <a href="https://www.virtualbox.org/">VirtualBox</a>.
-    </li>
-    <li>
-      Download our <a href="{{site.swc_vm}}">VM image</a>.
-      <strong>Warning:</strong> this file is 1.7 GByte, so please
-      download it <em>before</em> coming to your workshop.
-    </li>
-    <li>
-      Load the VM into VirtualBox by selecting "Import Appliance" and
-      loading the <code>.ova</code> file.
-    </li>
-  </ol>
 </div>
--->
+
 <div id="octave">
   <h3>GNU Octave</h3>
 
@@ -463,40 +349,84 @@ tools for an efficient workflow once you leave the workshop.
     <div class="col-md-4">
       <h4 id="octave-windows">Windows</h4>
       <ol>
-        <li>Open <a href="https://www.gnu.org/software/octave/download">https://www.gnu.org/software/octave/download</a> with your web browser.</li>
+        <li>Open <a href="https://www.gnu.org/software/octave/download">https://www.gnu.org/software/octave/download</a></li>
         <li>Under "Microsoft Windows", click the installer link for the latest stable version.</li>
         <li>Download and run the .exe installer.</li>
         <li>Follow the installation wizard, accepting the default options.</li>
-        <li>After installation, Octave can be launched from the Start Menu.</li>
       </ol>
     </div>
     <div class="col-md-4">
       <h4 id="octave-macosx">Mac OS X</h4>
       <ol>
-        <li>Open <a href="https://www.gnu.org/software/octave/download">https://www.gnu.org/software/octave/download</a> with your web browser.</li>
+        <li>Open <a href="https://www.gnu.org/software/octave/download">https://www.gnu.org/software/octave/download</a></li>
         <li>Under "macOS", click the installer link for the latest stable version.</li>
         <li>Download the .dmg file and open it.</li>
         <li>Drag the Octave application to your Applications folder.</li>
-        <li>You may need to right-click and select "Open" the first time to bypass Gatekeeper restrictions.</li>
       </ol>
     </div>
     <div class="col-md-4">
       <h4 id="octave-linux">Linux</h4>
       <ol>
         <li>Open a terminal window.</li>
-        <li>For Debian/Ubuntu-based distributions, run:
+        <li>For Debian/Ubuntu:
           <pre>sudo apt-get update && sudo apt-get install octave</pre>
         </li>
-        <li>For Fedora/RHEL-based distributions, run:
+        <li>For Fedora/RHEL:
           <pre>sudo dnf install octave</pre>
         </li>
-        <li>For other distributions, use your package manager or compile from source following instructions at <a href="https://wiki.octave.org/Installation">https://wiki.octave.org/Installation</a>.</li>
-        <li>After installation, launch Octave from terminal with <code>octave</code> command.</li>
+        <li>Launch with <code>octave</code> command.</li>
       </ol>
     </div>
   </div>
   
   <p>
-    <strong>Note:</strong> On Windows and Mac, you may also want to install the <a href="https://octave.sourceforge.io/">Octave Forge</a> packages which provide additional functionality. These can be installed from within Octave using the <code>pkg install</code> command.
+    <strong>Note:</strong> On Windows and Mac, you may also want to install the <a href="https://octave.sourceforge.io/">Octave Forge</a> packages which provide additional functionality.
   </p>
-</div> <!-- End of 'Octave' section. -->
+</div>
+
+<div id="matlab">
+  <h3>MATLAB</h3>
+
+  <p>
+    <a href="https://www.mathworks.com/products/matlab.html">MATLAB</a> is a proprietary multi-paradigm numerical computing environment. Many institutions provide licenses for their members.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="matlab-windows">Windows</h4>
+      <ol>
+        <li>Check with your institution about MATLAB license availability</li>
+        <li>Create a MathWorks account using your institutional email</li>
+        <li>Download the installer from <a href="https://www.mathworks.com/downloads/">MathWorks Downloads</a></li>
+        <li>Run the installer and follow the instructions</li>
+        <li>Activate using your institutional license</li>
+      </ol>
+    </div>
+    <div class="col-md-4">
+      <h4 id="matlab-macosx">Mac OS X</h4>
+      <ol>
+        <li>Check with your institution about MATLAB license availability</li>
+        <li>Create a MathWorks account using your institutional email</li>
+        <li>Download the installer from <a href="https://www.mathworks.com/downloads/">MathWorks Downloads</a></li>
+        <li>Open the .dmg package and run the installer</li>
+        <li>Activate using your institutional license</li>
+      </ol>
+    </div>
+    <div class="col-md-4">
+      <h4 id="matlab-linux">Linux</h4>
+      <ol>
+        <li>Check with your institution about MATLAB license availability</li>
+        <li>Create a MathWorks account using your institutional email</li>
+        <li>Download the installer from <a href="https://www.mathworks.com/downloads/">MathWorks Downloads</a></li>
+        <li>Run the installer from terminal:
+          <pre>sudo ./install</pre>
+        </li>
+        <li>Activate using your institutional license</li>
+      </ol>
+    </div>
+  </div>
+  
+  <p>
+    <strong>Note:</strong> If you don't have institutional access, MathWorks offers a <a href="https://www.mathworks.com/products/matlab-home.html">Home license</a> or a <a href="https://www.mathworks.com/academia/student.html">student version</a> at reduced cost. For temporary use, you can also try <a href="https://www.mathworks.com/products/matlab-online.html">MATLAB Online</a>.
+  </p>
+</div>
